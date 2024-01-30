@@ -1,0 +1,46 @@
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li a{
+    color: rgb(14, 21, 27);
+}
+
+
+img{
+   width:90px;
+    margin: 2rem 0 0 2rem;
+}
+main{
+    width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+}
+
+#grafico{
+  width: 400px;
+    margin: 3rem;
+}
+
+#meuGrafico{
+    width: 50px;
+
+}
+.texsaldo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(250, 250, 173);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+#saldoAtual{
+    color: red;
+    padding: 0.5rem;
+    font-size: 25px;
+}

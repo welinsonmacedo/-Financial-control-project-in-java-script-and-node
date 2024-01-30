@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lançamento de Entrada de Saldo</title>
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button><a href="../Home/index.html">Voltar</a></button>
+    <h1>Lançamento de Entrada de Saldo</h1>
+    <h2>Saldo Atual: R$<h3 id="saldo-atual"> 0.00</h3></h2>
+    <div id="saldo"></div>
+    <div>
+      <ul class="container_inputs">
+        <li>
+            <input type="date" id="dataEntrada" placeholder="Data">
+          <input type="text" id="descricaoEntrada" placeholder="Descrição" />
+        </li>
+        <li>
+          <input
+            type="number"
+            id="valorEntrada"
+            placeholder="Valor de Entrada"
+          />
+        </li>
+        <li><button onclick="lancarEntrada()">Lançar Entrada</button></li>
+      </ul>
+    </div>
+
+    <table id="tabelaSaldos">
+      <thead>
+        <tr>
+            <th>Data</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+          <th>Ação</th>
+         
+        </tr>
+      </thead>
+      <tbody id="corpoTabelaSaldos">
+        <!-- Cada linha da tabela -->
+        <tr>
+            <td>Data</td>
+          <td>Descrição Saldo</td>
+          <td id="valorSaldo">R$ 0,00</td>
+          <td>
+            <button onclick="editarSaldo()">Editar</button>
+            <button onclick="deletarSaldo()">Deletar</button>
+          </td>
+        </tr>
+        <!-- Outras linhas da tabela conforme necessário -->
+      </tbody>
+    </table>
+    <div class="container_img">
+      <img src="../../../Assets/LOGO.png" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "descricao": "casa parcela ",
+    "categoria": [
+      "",
+      "ParcelaCasa"
+    ],
+    "dataVencimento": "2024-01-29",
+    "valor": "600",
+    "pago": true
+  },
+  {
+    "descricao": "Energia",
+    "categoria": [
+      "",
+      "Energia"
+    ],
+    "dataVencimento": "2024-01-29",
+    "valor": "150",
+    "pago": true
+  }
+]

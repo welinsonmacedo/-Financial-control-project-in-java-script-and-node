@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    
+    <nav>
+      <ul>
+        <li>
+          <img src="../../../Assets/LOGO.png" alt="" />
+        </li>
+        <li>
+          <button>
+            <a href="../Relatorios/index.html"
+              >Lancamento de Despesa / Despesas Lancadas</a
+            >
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="../EntradaSaldo/index.html"
+              >Lancar Saldo / Verificar Saldos Lancados / Saldo Atual</a
+            >
+          </button>
+        </li>
+      <li class="texsaldo">
+        <h3>R$ -:<h3  id="saldoAtual" ></h3>   </h3>
+      </li>
+      </ul>
+    </nav>
+    <div id="grafico">
+      <canvas id="meuGrafico"></canvas>
+    </div>
+    
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>

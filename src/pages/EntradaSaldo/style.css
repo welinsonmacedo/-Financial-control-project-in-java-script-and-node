@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+body >div>img{
+    width: 300px;
+}
+.container_inputs{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 4rem;
+}
+.container_inputs >li>input{
+    background-color: gainsboro;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+
+/* Estilos para a tabela */
+#tabelaSaldos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabelaSaldos th, #tabelaSaldos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabelaSaldos th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para a soma total */
+#tabelaSaldos .total {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}

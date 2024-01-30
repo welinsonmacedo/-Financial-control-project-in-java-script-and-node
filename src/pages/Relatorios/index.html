@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../global.css" />
+    <title>Dados Salvos</title>
+  </head>
+  <body>
+    <div>
+      <main>
+        <div class="button">
+            <button><a href="../Home/index.html">Voltar</a></button>
+            <button onclick="abrirDados()">Consultar e lancar Saldo</button>
+        </div>
+       
+        <form action="http://localhost:3000/salvar" method="post" class="container_inputs" >
+          <div class="container_img">
+            <img src="../../../Assets/LOGO.png" alt="">
+          </div>
+            <p>----></p>
+            <input type="text" placeholder="Descrição" id="descricao" name="descricao">
+            <input type="hidden" name="categoria" placeholder="Categoria" id="categoria">
+            <select name="categoria">
+                <option value="ParcelaCasa">ParcelaCasa</option>
+                <option value="ParcelaCarro">ParcelaCarro</option>
+                <option value="ParcelaMoto">ParcelaMoto</option>
+                <option value="ParcelaOutros">ParcelaOutros</option>
+                <option value="Consorcio">Consorcio</option>
+                <option value="Emprestimo">Emprestimo</option>
+                <option value="CartaoCredito">CartaoCredito</option>
+                <option value="Energia">Energia</option>
+                <option value="Agua">Agua</option>
+                <option value="Internet">Internet</option>
+                <option value="Celular">Celular</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Emergencia">Emergencia</option>
+                <option value="Outros">Outros</option>
+               
+             </select>
+             <input type="date" placeholder="Vencimento" id="vencimento" name="dataVencimento">
+             <span>R$</span><input type="number" placeholder="Valor" id="valor" name="valor">
+             <input type="checkbox"  id="pago" name="pago" value="false"  hidden>
+             <button type="submit">Lançar</button>
+        </form>
+        
+      
+    </main>
+     </div>
+    <div class="container">
+      <h3>Lista de Despesas</h3>
+      
+      <div class="dados-container">
+        <table id="tabela-dados">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Descrição</th>
+              <th>Categoria</th>
+              <th>Data de Vencimento</th>
+              <th>Valor</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>1</td>
+                <td>Produto A</td>
+                <td>Alimentação</td>
+                <td>2024-01-18</td>
+                <td>${formatarDinheiro(Valor)}</td>
+                <td><button>Pagar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+# Arquivos temporários
+*.log
+*.tmp
+
+# Diretórios de dependências
+/node_modules
+
+# Arquivos específicos
+config.js
+secrets.txt
